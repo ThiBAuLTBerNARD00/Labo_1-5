@@ -9,9 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MaLibrairieForme", "MaLibra
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MaLibrairieFormeTests", "MaLibrairieFormeTests\MaLibrairieFormeTests.csproj", "{98181D63-10C9-4883-B331-C1724371F2B2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathUtil", "MathUtil\MathUtil.csproj", "{F632170D-5108-4266-9811-37F879204344}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MathUtil", "MathUtil\MathUtil.csproj", "{F632170D-5108-4266-9811-37F879204344}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Comparer", "Comparer\Comparer.csproj", "{0F7D53CA-A4A4-4FDD-85B6-D7DC12832782}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Comparer", "Comparer\Comparer.csproj", "{0F7D53CA-A4A4-4FDD-85B6-D7DC12832782}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculatrice", "Calculatrice\Calculatrice.csproj", "{4F1E8E09-9C3A-4EDF-9896-0210BE17B18B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{0F7D53CA-A4A4-4FDD-85B6-D7DC12832782}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0F7D53CA-A4A4-4FDD-85B6-D7DC12832782}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0F7D53CA-A4A4-4FDD-85B6-D7DC12832782}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F1E8E09-9C3A-4EDF-9896-0210BE17B18B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F1E8E09-9C3A-4EDF-9896-0210BE17B18B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F1E8E09-9C3A-4EDF-9896-0210BE17B18B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F1E8E09-9C3A-4EDF-9896-0210BE17B18B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
