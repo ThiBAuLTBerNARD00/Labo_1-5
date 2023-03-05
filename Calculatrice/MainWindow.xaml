@@ -9,68 +9,113 @@
 
 
     <Grid>
-        <Grid.ColumnDefinitions>
-            <!-- HIDE COLUMN 2 / WINDOWS UI COLORS / RIGHT PANEL -> RIGHT ALIGN -->
-            <ColumnDefinition Width="*" MinWidth="317" />
-            <!-- EDIT WIDTH (320) -->
-            <ColumnDefinition Width="0" />
-        </Grid.ColumnDefinitions>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="Fichier">
+                <MenuItem x:Name="BoutonQuitter" Header="Quitter" Click="BouttonQuitter_Click"/>
 
-        <Grid Grid.Column="0" Grid.Row="0" Margin="3,0,3,3">
+            </MenuItem>
+            <MenuItem Header="Options">
+                <MenuItem x:Name="BouttonParamètres" Header="Paramètres" Click="BouttonParamètres_Click"/>
+            </MenuItem>
+        </Menu>
+        <Grid>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition />
-                <ColumnDefinition />
-                <ColumnDefinition />
-                <ColumnDefinition />
+                <!-- HIDE COLUMN 2 / WINDOWS UI COLORS / RIGHT PANEL -> RIGHT ALIGN -->
+                <ColumnDefinition Width="*" MinWidth="317" />
+                <!-- EDIT WIDTH (320) -->
+                <ColumnDefinition Width="0" />
             </Grid.ColumnDefinitions>
 
-            <Grid.RowDefinitions>
-                <RowDefinition Height="39*" />
-                <RowDefinition Height="10*" />
-                <RowDefinition Height="15*" />
-                <RowDefinition Height="15*" />
-                <RowDefinition Height="15*" />
-                <RowDefinition Height="15*" />
-                <RowDefinition Height="15*" />
-                <RowDefinition Height="15*" />
-            </Grid.RowDefinitions>
-            <Button Grid.Column="0" Grid.Row="2" FontFamily="Segoe MDL2 Assets" Content="&#xE94C;" Background="White" />
-            <Button Grid.Column="1" Grid.Row="2" Content="CE" Background="White"  />
-            <Button Grid.Column="2" Grid.Row="2" Content="C" Background="White"  />
-            <Button Grid.Column="3" Grid.Row="2" FontFamily="Segoe MDL2 Assets" Content="&#xE94F;" Background="White" />
+            <Grid Grid.Column="0" Grid.Row="0" Margin="3,0,3,3">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
 
-            <Button Grid.Column="0" Grid.Row="3" FontFamily="Segoe UI" FontSize="15" Content="&#x215F;&#x1D465;" Background="White" />
-            <Button Grid.Column="1" Grid.Row="3" FontFamily="Segoe UI" FontSize="15" Content="&#x1D465;&#xB2;" Background="White" />
-            <Button Grid.Column="2" Grid.Row="3" FontFamily="Segoe UI" FontSize="15" Content="&#xB2;&#x221A;&#x1D465;" Background="White" />
-            <Button Grid.Column="3" Grid.Row="3" FontFamily="Segoe MDL2 Assets" Content="&#xE94A;" Background="White" />
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="39*" />
+                    <RowDefinition Height="10*" />
+                    <RowDefinition Height="15*" />
+                    <RowDefinition Height="15*" />
+                    <RowDefinition Height="15*" />
+                    <RowDefinition Height="15*" />
+                    <RowDefinition Height="15*" />
+                    <RowDefinition Height="15*" />
+                </Grid.RowDefinitions>
+                <DockPanel Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="4" Margin="-3,21,0,0">
+                    <DockPanel DockPanel.Dock="Top" Height="34">
+                        <Button Width="40" FontSize="16" Content="&#xE700;" Background="{x:Null}" BorderBrush="{x:Null}"/>
+                        <Label  Margin="1.5,0,7.5,0">Standart</Label>
+                        <Button Width="40" FontSize="16" Content="&#xEE49;" Background="{x:Null}" BorderBrush="{x:Null}"/>
+                        <Button Width="40" FontSize="16" Content="&#xF738;" Background="{x:Null}"   HorizontalAlignment="Right" BorderBrush="{x:Null}"/>
 
-            <Button Grid.Column="0" Grid.Row="4" Content="7" Background="White"  />
-            <Button Grid.Column="1" Grid.Row="4" Content="8" Background="White"  />
-            <Button Grid.Column="2" Grid.Row="4" Content="9" Background="White"  />
-            <Button Grid.Column="3" Grid.Row="4" FontFamily="Segoe MDL2 Assets" Content="&#xE947;" Background="White"  />
+                    </DockPanel>
+                    <StackPanel Orientation="Vertical" VerticalAlignment="Center">
+                        <Label HorizontalAlignment="Right" Margin="0,-2,7.5,0">15+10</Label>
+                        <Label HorizontalAlignment="Right" Margin="0,-10,7.5,0">25</Label>
 
-            <Button Grid.Column="0" Grid.Row="5" Content="4" Background="White"  />
-            <Button Grid.Column="1" Grid.Row="5" Content="5" Background="White"  />
-            <Button Grid.Column="2" Grid.Row="5" Content="6" Background="White"  />
-            <Button Grid.Column="3" Grid.Row="5" FontFamily="Segoe MDL2 Assets" Content="&#xE949;" Background="White"  />
+                    </StackPanel>
+                </DockPanel>
 
-            <Button Grid.Column="0" Grid.Row="6" Content="1" Background="White"  />
-            <Button Grid.Column="1" Grid.Row="6" Content="2" Background="White"  />
-            <Button Grid.Column="2" Grid.Row="6" Content="3" Background="White" />
-            <Button Grid.Column="3" Grid.Row="6" FontFamily="Segoe MDL2 Assets" Content="&#xE948;" Background="White" />
+                <Grid Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition MaxWidth="800" />
+                        <ColumnDefinition MaxWidth="800" />
+                        <ColumnDefinition MaxWidth="800" />
+                        <ColumnDefinition MaxWidth="800" />
+                        <ColumnDefinition MaxWidth="800" />
+                        <ColumnDefinition MaxWidth="800" />
+                    </Grid.ColumnDefinitions>
 
-            <Button Grid.Column="0" Grid.Row="7" FontFamily="Segoe UI" FontSize="16" Content="&#x207A;&#x2215;&#x208B;" Background="#FFFDFDFD" />
-            <Button Grid.Column="1" Grid.Row="7" Content="0" Background="#FFFDFDFD"  />
-            <Button Grid.Column="2" Grid.Row="7" Content="," Background="#FFFDFDFD"  />
-            <Button Grid.Column="3" Grid.Row="7" FontFamily="Segoe MDL2 Assets" Content="&#xE94E;" Background="#FF346CDC"  />
+                    <Button Grid.Column="0" Content="MC" />
+                    <Button Grid.Column="1" Content="MR" />
+                    <Button Grid.Column="2" Content="M+" />
+                    <Button Grid.Column="3" Content="M-" />
+                    <Button Grid.Column="4" Content="MS" />
+                    <Button Grid.Column="5" Content="M" />
+                </Grid>
+                <Button Grid.Column="0" Grid.Row="2" FontFamily="Segoe MDL2 Assets" Content="&#xE94C;" Background="White" />
+                <Button Grid.Column="1" Grid.Row="2" Content="CE" Background="White"  />
+                <Button Grid.Column="2" Grid.Row="2" Content="C" Background="White"  />
+                <Button Grid.Column="3" Grid.Row="2" FontFamily="Segoe MDL2 Assets" Content="&#xE94F;" Background="White" />
+
+                <Button Grid.Column="0" Grid.Row="3" FontFamily="Segoe UI" FontSize="15" Content="&#x215F;&#x1D465;" Background="White" />
+                <Button Grid.Column="1" Grid.Row="3" FontFamily="Segoe UI" FontSize="15" Content="&#x1D465;&#xB2;" Background="White" />
+                <Button Grid.Column="2" Grid.Row="3" FontFamily="Segoe UI" FontSize="15" Content="&#xB2;&#x221A;&#x1D465;" Background="White" />
+                <Button Grid.Column="3" Grid.Row="3" FontFamily="Segoe MDL2 Assets" Content="&#xE94A;" Background="White" />
+
+                <Button Grid.Column="0" Grid.Row="4" Content="7" Background="White"  />
+                <Button Grid.Column="1" Grid.Row="4" Content="8" Background="White"  />
+                <Button Grid.Column="2" Grid.Row="4" Content="9" Background="White"  />
+                <Button Grid.Column="3" Grid.Row="4" FontFamily="Segoe MDL2 Assets" Content="&#xE947;" Background="White"  />
+
+                <Button Grid.Column="0" Grid.Row="5" Content="4" Background="White"  />
+                <Button Grid.Column="1" Grid.Row="5" Content="5" Background="White"  />
+                <Button Grid.Column="2" Grid.Row="5" Content="6" Background="White"  />
+                <Button Grid.Column="3" Grid.Row="5" FontFamily="Segoe MDL2 Assets" Content="&#xE949;" Background="White"  />
+
+                <Button Grid.Column="0" Grid.Row="6" Content="1" Background="White"  />
+                <Button Grid.Column="1" Grid.Row="6" Content="2" Background="White"  />
+                <Button Grid.Column="2" Grid.Row="6" Content="3" Background="White" />
+                <Button Grid.Column="3" Grid.Row="6" FontFamily="Segoe MDL2 Assets" Content="&#xE948;" Background="White" />
+
+                <Button Grid.Column="0" Grid.Row="7" FontFamily="Segoe UI" FontSize="16" Content="&#x207A;&#x2215;&#x208B;" Background="#FFFDFDFD" />
+                <Button Grid.Column="1" Grid.Row="7" Content="0" Background="#FFFDFDFD"  />
+                <Button Grid.Column="2" Grid.Row="7" Content="," Background="#FFFDFDFD"  />
+                <Button Grid.Column="3" Grid.Row="7" FontFamily="Segoe MDL2 Assets" Content="&#xE94E;" Background="#FF346CDC"  />
+                
+                
+            </Grid>
+
+
+
+
+
+
+
         </Grid>
-
-
-
-
-
-
-
     </Grid>
 
 </Window>

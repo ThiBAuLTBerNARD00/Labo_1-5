@@ -25,7 +25,11 @@ namespace Calculatrice
             InitializeComponent();
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void BouttonQuitter_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
+        private void BouttonParamètres_Click(object sender, RoutedEventArgs e)
         {
 
         }
