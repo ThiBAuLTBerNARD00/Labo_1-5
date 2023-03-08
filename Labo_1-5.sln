@@ -13,7 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MathUtil", "MathUtil\MathUt
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Comparer", "Comparer\Comparer.csproj", "{0F7D53CA-A4A4-4FDD-85B6-D7DC12832782}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculatrice", "Calculatrice\Calculatrice.csproj", "{4F1E8E09-9C3A-4EDF-9896-0210BE17B18B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Calculatrice", "Calculatrice\Calculatrice.csproj", "{4F1E8E09-9C3A-4EDF-9896-0210BE17B18B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
