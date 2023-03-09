@@ -70,5 +70,26 @@ namespace Labo3
             }
         }
 
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            if (ComboBoxForm.Text.Equals("Rectangle"))
+            {
+
+            }
+            else
+            {
+                if(ComboBoxForm.Text.Equals("Carre"))
+                {
+
+                }
+                else
+                {
+                    if(ComboBoxForm.Text.Equals("Cercle"))
+                    {
+
+                    }
+                }
+            }
+        }
     }
 }

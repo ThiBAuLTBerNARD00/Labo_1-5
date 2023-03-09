@@ -13,7 +13,7 @@
         </Grid.ColumnDefinitions>
         <GroupBox Grid.Column="0" Margin="10,10,5,10" FontSize="18" Header="Nouvelles formes" Height="NaN" Width="NaN">
             <DockPanel Margin="10">
-                <Button Content="Ajout Nouvelle Forme" Margin="0,17,0,0" Background="#FF0E00FF"  DockPanel.Dock="Bottom" Height="36"/>
+                <Button Content="Ajout Nouvelle Forme" Margin="0,17,0,0" Background="#FF0E00FF"  DockPanel.Dock="Bottom" Height="36" Click="Button_Click"/>
                 <StackPanel Margin="0,-7,0,0">
                     <Label>Forme</Label>
                     <ComboBox x:Name="ComboBoxForm" SelectionChanged="ComboBoxForm_SelectionChanged" BorderBrush="#FF01FF03" Foreground="Black" >
