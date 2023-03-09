@@ -5,18 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Labo3"
         mc:Ignorable="d"
-        Title="Gestion des formes" Height="450" Width="800" MinHeight="400" MinWidth="700">
+        Title="Gestion des formes" Height="350" Width="600" MinHeight="400" MinWidth="700">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
+            <ColumnDefinition Width="450*"/>
+            <ColumnDefinition Width="250*"/>
         </Grid.ColumnDefinitions>
-        <GroupBox Grid.Column="0" Margin="10,10,5,10" FontSize="18" Header="Nouvelle forme">
+        <GroupBox Grid.Column="0" Margin="10,10,5,10" FontSize="18" Header="Nouvelles formes" Height="NaN" Width="NaN">
             <DockPanel Margin="10">
                 <Button Content="Ajout Nouvelle Forme" Margin="0,17,0,0" Background="#FF0E00FF"  DockPanel.Dock="Bottom" Height="36"/>
                 <StackPanel Margin="0,-7,0,0">
                     <Label>Forme</Label>
-                    <ComboBox x:Name="ComboBoxForm" SelectionChanged="ComboBoxForm_SelectionChanged" >
+                    <ComboBox x:Name="ComboBoxForm" SelectionChanged="ComboBoxForm_SelectionChanged" BorderBrush="#FF01FF03" Foreground="Black" >
                         <ComboBox.Background>
                             <LinearGradientBrush EndPoint="0,1">
                                 <GradientStop Color="#FF19FF00"/>
@@ -50,7 +50,7 @@
                 </StackPanel>
             </DockPanel>
         </GroupBox>
-        <GroupBox Grid.Column="1" Margin="5,10,10,10" Header="Formes">
+        <GroupBox Grid.Column="1" Margin="5,10,9,10" Header="Formes" Height="NaN" Width="NaN">
             <DockPanel Margin="10">
                 <StackPanel DockPanel.Dock="Bottom" Margin="4,20,0,3">
                     <Label x:Name="LabelFormInfos" BorderBrush="#9A9696" BorderThickness="1">AUCUNE FORME SELECTIONNEE !</Label>

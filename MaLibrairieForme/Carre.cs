@@ -2,13 +2,12 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace MaLibrairieForme
 {
-    public class Carre : Forme, IEstDans, ISommets
+    public class Carre : Forme, IEstDans, ISommets, IComparable<Carre>
     {
         #region VARIABLES MEMBRES
         public int L;
@@ -75,6 +74,10 @@ namespace MaLibrairieForme
         { get { return 4; } }
 
         public byte NbSommmet => throw new NotImplementedException();
+        public int CompareTo(Carre other)
+        {
+            return L.CompareTo(other.L);
+        }
         #endregion
     }
 }
